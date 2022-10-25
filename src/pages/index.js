@@ -17,8 +17,8 @@ export default function Home() {
                 <Image
                   src="/images/white-logo.svg"
                   alt="メガロのロゴ"
-                  width={72}
-                  height={16}
+                  width={183}
+                  height={38}
                   className="c-image-fluid"
                 />
               </picture>

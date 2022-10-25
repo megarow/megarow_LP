@@ -177,7 +177,7 @@ body {
   font-feature-settings: "pkna";
   color: #333;
   counter-reset: number 0;
-  background-color: #fff;
+  background-color: #f2f2f2;
   text-rendering: optimizelegibility;
 }
 body.is-drawerActive {

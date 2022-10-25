@@ -1,3 +1,2 @@
 // style/layout/_index.scss
-
-@forward "header";
+@use "../global/" as var;
