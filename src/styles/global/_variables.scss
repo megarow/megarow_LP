@@ -3,7 +3,17 @@
 // 幅関係の設定 ---------------------
 $content-width: 1140px !default;
 $layout-width-inner: 1200px;
-$font-base: '游ゴシック体', yugothic, '游ゴシック Medium', 'Yu Gothic Medium',
+
+@font-face {
+  font-family: 'tsunagiGothic';
+  src: url("/fonts/TsunagiGothic.ttf")format("truetype");
+  ;
+  // font-weight: normal;
+  // font-style: normal;
+}
+
+
+$font-base: 'tsunagiGothic', yugothic, '游ゴシック Medium', 'Yu Gothic Medium',
   '游ゴシック', 'Yu Gothic', sans-serif;
 $main-color: #93278f;
 $text-color: #333;
@@ -13,15 +23,15 @@ $secandary-base-color: #707070;
 // ブレークポイント
 $breakpoints: (
   'mini': (min-width:350px,
-),
-'sm': (min-width: 576px,
-),
-'md': (min-width: 768px,
-),
-'lg': (min-width: 992px,
-),
-'xl': (min-width: 1200px,
-),
-'xxl': (min-width: 1400px,
-),
-) !default;
+  ),
+  'sm': (min-width: 576px,
+  ),
+  'md': (min-width: 768px,
+  ),
+  'lg': (min-width: 992px,
+  ),
+  'xl': (min-width: 1200px,
+  ),
+  'xxl': (min-width: 1400px,
+  ),
+  ) !default;
