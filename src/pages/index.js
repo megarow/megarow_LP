@@ -257,7 +257,7 @@ export default function Home() {
                   <h3 className="p-white-paper__text">ポートフォリオ機能</h3>
                 </div>
                 <div className="p-white-paper__card">
-                  <h3 className="p-white-paper__text">ポートフォリオ機能</h3>
+                  <h3 className="p-white-paper__text">企業マッチング</h3>
                 </div>
               </div>
               <div className="p-white-paper__button-inner">
