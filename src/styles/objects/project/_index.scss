@@ -1,1 +1,350 @@
 // styles/objects/project/_index.scss
+%positionAbsolute {
+  position: absolute;
+}
+
+.p-fv {
+  padding-top: 90px;
+  height: 812px;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__image-inner {
+
+    &:first-of-type {}
+
+    &:nth-of-type(2) {
+      @extend %positionAbsolute;
+      top: 0;
+      right: 0;
+    }
+
+    &:nth-of-type(3) {
+      @extend %positionAbsolute;
+      left: 0;
+    }
+
+    &:nth-of-type(4) {
+      @extend %positionAbsolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__title-inner {}
+
+  &__title {
+    color: #fff;
+    font-weight: 900;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+  }
+
+  &__button-inner {
+    margin-top: 31px;
+    text-align: center;
+  }
+}
+
+.p-introduction {
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__title-inner {
+    margin-top: 64px;
+  }
+
+  &__title {}
+
+  &__image-inner {
+    display: block;
+    text-align: center;
+  }
+
+  &__text-inner {
+    margin-top: 32px;
+  }
+
+  &__text {
+    font-size: 19px;
+    line-height: 2.3;
+    color: #0B2442;
+  }
+
+}
+
+.p-use {
+  margin-top: 97px;
+
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__title-inner {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url("/images/logo-symbol.svg");
+      width: 66px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    counter-reset: number 0;
+    gap: 32px;
+  }
+}
+
+.p-use-card {
+
+  &__image-inner {
+    display: block;
+    position: relative;
+    padding: 0rem 2rem 0rem 2rem;
+
+    &::before {
+      counter-increment: number 1;
+      content: counter(number, decimal-leading-zero);
+      background: #FFDAC8;
+      z-index: 1;
+      font-size: 28px;
+      text-align: center;
+      color: #0B2442;
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      border-radius: 100px;
+      line-height: 60px;
+      position: absolute;
+      left: 0px;
+      top: -20px;
+    }
+  }
+
+  &__title-inner {
+    margin-top: 16px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("/images/heading-brush02.svg");
+      display: inline-block;
+      width: 186px;
+      height: 63px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 1;
+    color: #0B2442;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0B2442;
+  }
+}
+
+.p-auction {
+  margin-top: 69px;
+
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__title-inner {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url("/images/hammer.svg");
+      width: 88px;
+      height: 93px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__container {
+    margin-top: 32px;
+  }
+
+  &__image-inner {}
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+    counter-reset: number 0;
+    margin-top: 31px;
+  }
+
+  &__item {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    &:before {
+      counter-increment: number 1;
+      content: counter(number, decimal-leading-zero);
+      display: inline-block;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 72px;
+      color: #FFFFFF;
+      background-color: #0B2442;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 16px 23px;
+      font-weight: 100;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #0B2442;
+    font-weight: 100;
+  }
+}
+
+.p-white-paper {
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__title-inner {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url("/images/hammer.svg");
+      width: 88px;
+      height: 93px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__card {
+    padding: 37px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 22px;
+    color: #0B2442;
+    font-weight: 100;
+  }
+
+  &__button-inner {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+}
+
+.l-footer {
+  margin-top: 32px;
+  padding-top: 26px;
+  padding-bottom: 12px;
+  background-color: #0B2442;
+
+  &__wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  &__logo-inner {}
+
+  &__logo {}
+
+  &__container {}
+
+  &__bottom {
+    margin-top: 57px;
+    text-align: center;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 100;
+  }
+}
+
+.l-footer-nav {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin-top: 21px;
+  }
+
+  &__item {}
+
+  &__link {
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFFFFF;
+  }
+}

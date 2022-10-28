@@ -1,0 +1,13 @@
+@use '../../global/' as var;
+
+.c-primary-button {
+  font-family: 'Roboto';
+  padding: 16px 32px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: inline-block;
+  background: #F06500;
+}

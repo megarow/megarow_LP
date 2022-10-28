@@ -1,0 +1,25 @@
+// styles/objects/component/_index.scss
+@use '../../global/' as var;
+
+.c-section-title {
+  font-size: 26px;
+  line-height: 2.3;
+  color: #0B2442;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 209px;
+    height: 26px;
+    background-image: url("/images/heading-brush.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -8px;
+    z-index: -1;
+  }
+
+}

@@ -150,3 +150,15 @@ select {
   border-radius: 0;
   appearance: none;
 }
+
+// buttonリセットcss
+button {
+  padding: 0;
+  font-family: inherit; // formタグ内での利用する場合、親から継承しないため
+  font-size: inherit; // formタグ内での利用する場合、親から継承しないため
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
