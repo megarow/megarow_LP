@@ -2,66 +2,70 @@
 @use "../global/" as var;
 
 .l-header {
-  padding: 14px;
-  width: 100%;
-  position: fixed;
-  z-index: 5;
+	padding: 14px;
+	width: 100%;
+	position: fixed;
+	z-index: 5;
 
-  @include var.mq(md) {
-    width: 550px;
-  }
+	@include var.mq(md) {
+		width: 550px;
+	}
 
-  &__wrapper {}
+	&__wrapper {}
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-  &__title {}
+	&__title {}
 
-  &__image-inner {}
+	&__image-inner {
+		display: block;
+		width: 100%;
+		height: 38px;
+	}
 }
 
 
 
 .l-header-navigation {
-  &__inner {}
+	&__inner {}
 
-  &__item {}
+	&__item {}
 
-  &__link {}
+	&__link {}
 }
 
 .l-main-container {
-  width: 100vw;
+	width: 100vw;
 
-  @include var.mq(md) {
-    width: 550px;
-    margin-left: calc(100% - 550px);
-    overflow: hidden;
-  }
+	@include var.mq(md) {
+		width: 550px;
+		margin-left: calc(100% - 550px);
+		overflow: hidden;
+	}
 }
 
 
 .l-desktop {
-  display: none;
+	display: none;
 
-  @include var.mq(md) {
-    display: block;
-    width: calc(100% - 550px);
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-  }
+	@include var.mq(md) {
+		display: block;
+		width: calc(100% - 550px);
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
 
-  &__wrapper {
-    background-color: blue;
-    height: 100%;
-    display: flex;
-    color: #fff;
-  }
+	&__wrapper {
+		background-color: blue;
+		height: 100%;
+		display: flex;
+		color: #fff;
+	}
 }
